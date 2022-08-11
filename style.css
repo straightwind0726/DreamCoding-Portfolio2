@@ -304,10 +304,6 @@
 
   /* work */
 
-  #work {
-    margin: 32px;
-  }
-
   .work__categories {
     margin: 40px;
   }
@@ -407,4 +403,42 @@
 
   /* testimonial */
 
+  #testimonial {
+    background-color: var(--color-light-white);
+  }
+
+  .testimonial {
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonial__avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+  }
+
+  .testimonial__speech-bubble {
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+  }
+
+  .testimonial__speech-bubble p {
+    color: var(--color-light-grey);
+  }
+
+  .testimonial__speech-bubble p:nth-child(1) {
+    font-size: var(--font-regular);
+  }
+
+  .testimonial__speech-bubble p:nth-child(2) {
+    font-size: var(--font-small);
+  }
+
+  .testimonial__speech-bubble .name a {
+    color: red;
+    font-weight: var(--weight-semi-bold);
+  }
+
   /* contact */
+
