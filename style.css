@@ -163,6 +163,12 @@
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
     color: var(--color-white);
+    transition: var(--animation-transition) all ease-in;
+  }
+
+  .home__button:hover {
+    background-color: var(--color-orange);
+    transform: scale(1.1);
   }
 
   /* section common */
@@ -442,3 +448,33 @@
 
   /* contact */
 
+  #contact {
+    background-color: var(--color-green);
+    padding: 12px 50px;
+  }
+
+  .contact__title,
+  .contact__email,
+  .contact__links,
+  .contact__rights {
+    color: var(--color-white);
+  }
+
+  .contact__links {
+    margin: 24px;
+  }
+
+  .contact__links a {
+    font-size: var(--font-large);
+    padding: 8px;
+    margin: 8px;
+    transition: var(--animation-transition) all ease-in;
+  }
+
+  .contact__links a:hover {
+    color: var(--color-orange);
+  }
+
+  .contact__rights {
+    font-size: var(--font-small);
+  }
