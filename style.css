@@ -135,6 +135,15 @@
     background-color: var(--color-dark-green);
   }
 
+  .navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+  }
+
   /* home */
 
   #home {
@@ -477,4 +486,48 @@
 
   .contact__rights {
     font-size: var(--font-small);
+  }
+
+  @media screen and (max-width: 786px) {
+    .navbar__toggle-btn {
+      display: block;
+    }
+
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar__menu {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+
+    .about__majors {
+      flex-direction: column;
+    }
+
+    .major {
+      margin-bottom: 38px;
+    }
+
+    .skillset {
+      flex-direction: column;
+    }
+
+    .project {
+      flex-grow: 1;
+    }
+
+    .testimonial__avatar {
+      width: 80px;
+      height: 80px;
+    }
+
+    .testimonial {
+      margin: 12px;
+    }
+
   }
